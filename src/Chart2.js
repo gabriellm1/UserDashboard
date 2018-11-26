@@ -1,23 +1,21 @@
 import React, {Component} from 'react';
 import {Bar, Line, Pie} from 'react-chartjs-2';
 
-class Chart extends Component{
+class Chart2 extends Component{
   constructor(props){
     
     super(props);
     this.state = {
       chartData:{
-        labels: ['Alface', 'Uva', 'Manga', 'Maçã', 'Abacaxi', 'Laranja'],
+        labels: ['Uva', 'Manga','Abacaxi'],
         datasets:[
           {
             label:'Kg',
             data:[
-            494,
+            4,
               45,
-              160,
-              219,
-              162,
-              72
+              160
+             
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.8)',
@@ -49,7 +47,7 @@ class Chart extends Component{
           options={{
             title:{
               display:this.props.displayTitle,
-              text:'Total CSA-SP (kg)',
+              text:'Colhido (kg)',
               fontSize:25
             },
             legend:{
@@ -64,4 +62,4 @@ class Chart extends Component{
   }
 }
 
-export default Chart;
+export default Chart2;
