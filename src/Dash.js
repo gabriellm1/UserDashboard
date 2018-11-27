@@ -39,8 +39,8 @@ class App extends Component {
               <ul className="nav navbar-nav">
   
                 <li><Link activeClass="active" className="GraphGeral" to="GraphGeral" spy={true} smooth={true} duration={500} >Colheita Total CSA-SP</Link></li>
-                <li><Link activeClass="active" className="GraphEsp_1" to="GraphEsp_1" spy={true} smooth={true} duration={500}>Colheita do Usuário</Link></li>
-                <li><Link activeClass="active" className="GraphEsp_2" to="GraphEsp_2" spy={true} smooth={true} duration={500} >Temporada de Colheita</Link></li>
+                <li><Link activeClass="active" className="GraphEsp_1" to="GraphEsp_2" spy={true} smooth={true} duration={500}>Colheita do Usuário</Link></li>
+                <li><Link activeClass="active" className="GraphEsp_2" to="GraphEsp_1" spy={true} smooth={true} duration={500} >Temporada de Colheita</Link></li>
              
               </ul>
             </div>
