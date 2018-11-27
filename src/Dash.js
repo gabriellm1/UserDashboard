@@ -38,10 +38,9 @@ class App extends Component {
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav">
   
-                <li><Link activeClass="active" className="GraphGeral" to="GraphGeral" spy={true} smooth={true} duration={500} >Colheita Total</Link></li>
-                <li><Link activeClass="active" className="GraphEsp_1" to="GraphEsp_1" spy={true} smooth={true} duration={500}>Temporadas de Colheita</Link></li>
-                <li><Link activeClass="active" className="GraphEsp_2" to="GraphEsp_2" spy={true} smooth={true} duration={500} >Test 3</Link></li>
-                <li><Link activeClass="active" className="GraphEsp_3" to="GraphEsp_3" spy={true} smooth={true} duration={500}>Mais alguma Coisa</Link></li>
+                <li><Link activeClass="active" className="GraphGeral" to="GraphGeral" spy={true} smooth={true} duration={500} >Colheita Total CSA-SP</Link></li>
+                <li><Link activeClass="active" className="GraphEsp_1" to="GraphEsp_1" spy={true} smooth={true} duration={500}>Colheita do Usuário</Link></li>
+                <li><Link activeClass="active" className="GraphEsp_2" to="GraphEsp_2" spy={true} smooth={true} duration={500} >Temporada de Colheita</Link></li>
              
               </ul>
             </div>
@@ -49,30 +48,28 @@ class App extends Component {
         </nav>
   
         <Element name="GraphGeral" className="element" >
-        Colheita Total
+        Total Absoluto
         <div className="App">
           <Chart/>
         </div>
         </Element>
-  
-        <Element name="GraphEsp_1" className="element">
-        Temporadas de Colheita
-        <div className="App">
-          <Chart1/>
-        </div>
-        </Element>
-  
+        
         <Element name="GraphEsp_2" className="element">
-          test 3
+          Colheita do Usuário
         <div className="App">
           <Chart2/>
         </div>
         </Element>
-  
-        <Element name="GraphEsp_3" className="element">
-        Mais alguma coisa
+        
+        <Element name="GraphEsp_1" className="element">
+        Temporada de Colheita
+        <div className="App">
+          <Chart1/>
+        </div>
         </Element>
-  
+
+     
+
       </div>
 
 );
