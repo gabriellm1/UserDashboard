@@ -1,37 +1,29 @@
 import React, {Component} from 'react';
-import {Bar} from 'react-chartjs-2';
+import {Pie} from 'react-chartjs-2';
 
-class Chart1 extends Component{
+class Chart extends Component{
   constructor(props){
     
     super(props);
     this.state = {
     }
   }
-  componentDidMount(){
-//console.log(this.state.chartData)
-  
-}
-
 
   static defaultProps = {
     displayTitle:true,
-    displayLegend: false,
-    legendPosition:'bottom'
-    
+    displayLegend: true,
+    legendPosition:'bottom',
   }
-
-
 
   render(){
     return (
       <div className="chart">
-        <Bar
-          data={this.props.kg}
+        <Pie
+          data={this.props.alimentos}
           options={{
             title:{
               display:this.props.displayTitle,
-              text:'Total Usuário',
+              text:'Total CSA-SP (kg)',
               fontSize:25
             },
             legend:{
@@ -40,11 +32,10 @@ class Chart1 extends Component{
             }
           }}
         />
-         
+
       </div>
-                
     )
   }
 }
 
-export default Chart1;
+export default Chart;
