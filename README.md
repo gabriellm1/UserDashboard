@@ -2,12 +2,10 @@
 
 1 - Adicionar os componentes chart.js, pie.js e Dash.js na pasta
 
-2 - Importar o "dash" com:  
+2 - Importar o "dash" com: import Dash from './Dash' 
 
-3 - Implementar no render: <dash id_autor={"1"} ></dash>
+3 - Implementar no render: <dash id={"1"} ></dash>
 Se tiver logado id='id do usuario' e se tiver nao estiver logado id=null
-
-4 - Modificar no package.json "proxy": "http://68.183.103.175:5000"
 
 ------ ------ ------ ------ ------
 
