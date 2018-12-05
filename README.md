@@ -7,6 +7,19 @@
 3 - Implementar no render: <dash id={"1"} ></dash>
 Se tiver logado id='id do usuario' e se tiver nao estiver logado id=null
 
+*4 - Se precisar criar com uma função, utilizar esta e colocar add_dash no rote: 
+const add_dash = () =>{
+      // caso esteja logado, retorna dados do usuário e os gerais
+      if(this.state.user_id){
+        return(
+            <Dash id={this.state.user_id}></Dash>
+      )}
+      // caso não esteja logado, retorna apenas os dados gerais
+      else{
+          return(
+                <Dash id={null}></Dash>
+          )}
+    }
 ------ ------ ------ ------ ------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
